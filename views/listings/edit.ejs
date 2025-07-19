@@ -1,0 +1,47 @@
+<% layout('layout') %>
+  <h1>Edit Listing</h1>
+
+  <form action="/listings/<%= listing._id %>?_method=PUT" method="POST" novalidate class="needs-validation" enctype="multipart/form-data">
+
+    <div>
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" value="<%= listing.title %>" required />
+      <div class="invalid-feedback">Please enter a title.</div>
+    </div>
+
+    <div>
+      <label for="description">Description:</label>
+      <textarea id="description" name="description"><%= listing.description %></textarea>
+    </div>
+
+    <div>
+      <label>Original Image:</label>
+      <img src="<%= originalUrl %>" alt="">
+    </div>
+
+    <div>
+      <label for="image">Update Image:</label>
+      <input type="file" id="image" name="image" />
+    </div><br>
+
+    <div>
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" value="<%= listing.price %>" min="0" required />
+      <div class="invalid-feedback">Please enter a price.</div>
+    </div>
+
+    <div>
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" value="<%= listing.location %>" required />
+      <div class="invalid-feedback">Please enter a location.</div>
+    </div>
+
+    <div>
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country" value="<%= listing.country %>" />
+    </div>
+
+    <button type="submit">Save Changes</button>
+  </form>
+
+  <p><a href="/listings/<%= listing._id %>">Cancel</a></p>

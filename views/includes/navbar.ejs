@@ -1,0 +1,40 @@
+<style>
+  .search-btn{
+    background-color: #ff5a5f;
+    color: white;
+    border-radius: 25px;
+  }
+
+  .search-btn:hover{
+    background-color: #dc3545;
+    color: white;
+  }
+
+  .search-input{
+    border-radius: 25px;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+  }
+
+</style>
+
+<nav>
+  <div class="nav-left">
+    <a href="/listings"><i class="fas fa-house-user"></i>Explore</a>
+  </div>
+  <div class="nav-mid">
+    <div class="d-flex" role="search">
+        <input class="form-control me-2 search-input" type="search" placeholder="Search Destinations" />
+        <button class="btn search-btn" type="submit">Search</button>
+      </div>
+  </div>
+  <div class="nav-right">
+    <a href="/listings/new">Airbnb your home</a>
+    <% if (!currentUser) { %>
+      <a href="/register"><b>Signup</b></a>
+      <a href="/login"><b>Login</b></a>
+    <% } else { %>
+      <span class="nav-user">Hi, <%= currentUser.username %></span>
+      <a href="/logout"><b>Logout</b></a>
+    <% } %>
+  </div>
+</nav>

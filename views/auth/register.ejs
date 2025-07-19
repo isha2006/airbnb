@@ -1,0 +1,24 @@
+<% layout('layout') %>
+<h1>Register</h1>
+
+<form action="/register" method="POST" novalidate class="needs-validation">
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required />
+    <div class="invalid-feedback">Please enter a username.</div>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+    <div class="invalid-feedback">Please enter an email.</div>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required />
+    <div class="invalid-feedback">Please enter a password.</div>
+  </div>
+
+  <button type="submit">Register</button>
+</form>
+
+<p>Already have an account? <a href="/login">Log in</a></p>

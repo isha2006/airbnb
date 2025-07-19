@@ -1,0 +1,223 @@
+nav {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-left,
+.nav-mid,
+.nav-right {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-left i {
+    margin-right: 6px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff5a5f;
+}
+
+.nav-user {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff5a5f;
+    margin-top: 6px;
+}
+
+h2 {
+    margin-top: 6px;
+    margin-bottom: 5px;
+}
+
+img {
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+form:not(.delete-form) {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 95%;
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+    outline: none;
+    background-color: #fff;
+}
+
+.invalid-feedback {
+    margin-top: -20px;
+    margin-bottom: 12px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff5a5f;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #dc3545;
+}
+
+.delete-form {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 16px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.review-delete {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 3px 9px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.review-delete:hover {
+    background-color: #c5303a;
+}
+
+a {
+    color: #ff5a5f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.listing-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.listing-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.listing-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.listing-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px) scale(1.01);
+}
+
+.review-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.review-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    border-top: 1px solid #e5e5e5;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#map {
+    height: 400px;
+    width: 80%;
+    max-width: 600px;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
