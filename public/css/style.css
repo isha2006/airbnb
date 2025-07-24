@@ -1,3 +1,14 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 nav {
     background-color: #f8f8f8;
     padding: 10px 20px;
@@ -216,8 +227,6 @@ footer {
     color: #666;
     font-size: 14px;
     border-top: 1px solid #e5e5e5;
-    position: relative;
-    bottom: 0;
     width: 100%;
 }
 
